@@ -5,8 +5,12 @@
     const app = express()
     const path = require('path')
     const mongoose = require('mongoose')
-    const session = require('session')
+    const session = require('express-session')
     const flash = require('connect-flash')
+    const passport = require('passport')
+    const mainroute = require('./routes/mainroute')
+    const usuarios = require('./routes/login')
+    require('./config/auth')(passport)
 
 // Config
     // Session
@@ -32,6 +36,7 @@
         app.use(bodyParser.urlencoded({extended: true}))
         app.use(bodyParser.json())
     // Handlebars
+        app.use(express.static('public'))
         app.engine('handlebars', handlebars({defaultLayout: 'main'}))
         app.set('view engine', 'handlebars')
     // Mongoose
@@ -51,10 +56,11 @@
 
 
 // Routes
-    //
+    app.use('/', mainroute)
+    app.use('/usuarios', usuarios)
 
 
-    // Outros
+// Outros
     const PORT = 8081
     app.listen(PORT, () => {
         console.log('Servidor Rodando!')
