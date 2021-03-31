@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (min-width:0px){
+
+.box1 {
+    background: rgb(2,0,36);
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 0;
+}
+
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 10;
+}
+
+.links {
+    list-style: none;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.links li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.vline {
+    background-color: rgb(255,115,0);
+    height: 40px;
+    width: 5px;
+    z-index: 2;
+    position: absolute;
+    padding-top: 20px;
+
+}
+
+
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: rgb(255,115,0);
+}
+
+.sign {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.sign:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+.divi {
+    padding: 15px;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    color: rgb(255,115,0);
+    font-size: 20px;
+}
+
+.login:hover {
+    color: white;
+    background-color: rgb(255,115,0);
+}
+
+.banner {
+    padding-top: 80px;
+    height: 70vh;
+}
+
+.imagem {
+    position: absolute;
+    width: 40vh;
+    left: 80px;
+    top: 180px;
+}
+
+.caixa1 {
+    background-color: #fff;
+    width: 40vh;
+    height: 40vh;
+    border-radius: 50px;
+    border-color: #ff7300;
+}
+
+.pad1, .pad2 {
+    display: inline-block;
+    padding-left: 80px;
+}
+
+.padcaixa1 {
+    position: absolute;
+    padding-top: 80px;
+    padding-left: 60px;
+    margin: auto;
+}
+
+.input {
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid rgba(9,9,121,1);
+    padding: 14px 20px;
+    width: 200px;
+    outline: none;
+    color: rgb(255, 115, 0);
+    border-radius: 24px;
+    font-size: larger;
+}
+
+.enviar {
+    border: 0;
+    background: rgb(255, 115, 0);
+    display: block;
+    margin: 10px auto;
+    padding: 14px 20px;
+    width: 100px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgba(9,9,121,1);
+}
+
+.caixa2 {
+    padding-left: 0px;
+    background-color: #fff;
+    width: 120vh;
+    height: 70vh;
+    border-radius: 50px;
+    border-color: rgb(255, 115, 0);
+    display: inline-block;
+    background-color: #fff;
+}
+
+.grid {
+    position: absolute;
+}
+
+.padgrid {
+    padding-left: 5vh;
+    padding-top: 5vh;
+}
+
+.linha div {
+    height: 7vh;
+    width: 13vh;
+    background-color: #eee;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.linha div section {
+    position: absolute;
+    text-align: center;
+    height: 7vh;
+    width: 13vh;
+}
+
+.semana {
+    color: white;
+    background-color: rgb(255, 115, 0) !important;
+}
+
+.hora {
+    color: white;
+    background-color: rgb(255, 115, 0) !important;
+}
+
