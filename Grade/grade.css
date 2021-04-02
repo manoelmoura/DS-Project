@@ -4,11 +4,7 @@
     text-decoration: none;
 }
 
-body {
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
+
 
 p {
     padding: 0px;
@@ -17,12 +13,18 @@ p {
 
 @media screen and (min-width:0px){
 
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .box1 {
     background: rgb(2,0,36);
     background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     background-repeat: no-repeat;
     height: 100vh;
     z-index: 0;
+    min-width: 650px;
 }
 
 
@@ -53,8 +55,6 @@ header {
     padding-top: 20px;
 
 }
-
-
 
 .links li a {
     color: white;
@@ -97,23 +97,28 @@ header {
 }
 
 .banner {
-    padding-top: 80px;
-    height: 70vh;
+    position: absolute;
+    top: 16vh;
+}
+
+.img {
+    height: 280px;
 }
 
 .imagem {
-    position: absolute;
-    width: 40vh;
+    position: relative;
+    width: 370px;
     left: 80px;
-    top: 180px;
+    top: 10px;
 }
 
 .caixa1 {
     background-color: #fff;
-    width: 40vh;
-    height: 40vh;
+    width: 370px;
+    height: 370px;
     border-radius: 50px;
     border-color: #ff7300;
+    top: 200px;
 }
 
 .pad1, .pad2 {
@@ -122,9 +127,9 @@ header {
 }
 
 .padcaixa1 {
-    position: absolute;
+    width: 370px;
     padding-top: 80px;
-    padding-left: 60px;
+    position: absolute;
     margin: auto;
 }
 
@@ -163,10 +168,11 @@ header {
 }
 
 .caixa2 {
-    padding-left: 0px;
+    position: relative;
+    right: 1px;
     background-color: #fff;
-    width: 120vh;
-    height: 70vh;
+    width: 61vw;
+    height: 650px;
     border-radius: 50px;
     border-color: rgb(255, 115, 0);
     display: inline-block;
@@ -175,16 +181,17 @@ header {
 
 .grid {
     position: absolute;
+    padding-left: 20px;
 }
 
 .padgrid {
-    padding-left: 5vh;
+    padding-left: 0vh;
     padding-top: 5vh;
 }
 
 .linha div {
-    height: 7vh;
-    width: 13vh;
+    height: 65px;
+    width: 7vw;
     background-color: #eee;
     display: inline-block;
     border-radius: 20px;
@@ -194,8 +201,8 @@ header {
 .linha div section {
     position: absolute;
     text-align: center;
-    height: 7vh;
-    width: 13vh;
+    height: 65px;
+    width: 7vw;
 }
 
 .semana {
@@ -206,5 +213,70 @@ header {
 .hora {
     color: white;
     background-color: rgb(255, 115, 0) !important;
+}
+}
+
+@media screen and (max-width:1400px) {
+    .imagem {
+        left: 200px;
+    }
+    .box1 {
+        height: 1600px;
+    }
+    .padcaixa1 {
+        min-width: 630px;
+    }
+    .caixa1 {
+        min-width: 630px;
+    }
+    .caixa2 {
+        min-width: 630px;
+    }
+    .padgrid {
+        min-width: 630px;
+    }
+    .grid {
+        min-width: 630px;
+    }
+    .linha {
+        min-width: 630px;
+    }
+    .linha div {
+        min-height: 65px;
+        min-width: 70px;
+    }
+    .linha div section {
+        min-height: 65px;
+        min-width: 70px;  
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .box1 {
+        height: 1600px;
+    }
+    .banner {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    
+    .box1 {
+        height: 1700px;
+    }
+    .banner {
+        top: 300px;
+    }
+    .imagem {
+        left: 125px;
+    }
+    .pad1 {
+        padding-left: 0;
+    }
+    .pad2 {
+        padding-left: 0;
+    }
 }
 
