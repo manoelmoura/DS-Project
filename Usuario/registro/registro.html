@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html" style="font-size: 35px;">Ajuda UnB</a></li>
+                <div style="display: inline-block;" class="vline"></div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Mapa</a></li>
+                <li><a href="grade.html">Tradutor de Grade</a></li>
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <a href="login.html"><div class="login">Entrar</div></a>
+    </header>
+    <form action="action_page.php">
+        <div class="container">
+            <h1>Registro</h1>
+            <p>Complete esse formulario para criar sua conta.</p>
+            <hr>
+
+            <label for="nome"><b>Nome:</b></label>
+            <br>
+            <input type="text" placeholder="Nome" name="nome" id="nome" class="form-control" required>
+            <br>
+            <label for="email"><b>Email:</b></label>
+            <br>
+            <input type="email" placeholder="Email" name="email" id="email" class="form-control" required>
+            <br>
+            <label for="psw"><b>Senha:</b></label>
+            <br>
+            <input type="password" placeholder="Digite uma senha" name="senha" id="senha" required>
+            <br>
+            <label for="psw-repeat"><b>Repita sua Senha:</b></label>
+            <br>
+            <input type="password" placeholder="Repita sua senha" name="senha2" id="senha2" class="form-control" required>
+            <hr>
+
+            <button type="submit" class="register">Registrar</button>
+        </div>
+
+        <div class="container signin">
+            <p>Ja tem uma conta? <a href="login.html">Entre aqui</a>.</p>
+        </div>
+    </form>
+
+    <div>
+        <footer>
+            <p>&copy; 2021 Ajuda UnB.</p>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
