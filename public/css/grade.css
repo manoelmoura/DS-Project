@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+* {
+    text-decoration: none;
+}
+
+
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (min-width:0px){
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box1 {
+    background: rgb(2,0,36);
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 0;
+    min-width: 650px;
+}
+
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 10;
+}
+
+.links {
+    list-style: none;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.links li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.vline {
+    background-color: rgb(255,115,0);
+    height: 40px;
+    width: 5px;
+    z-index: 2;
+    position: absolute;
+    padding-top: 20px;
+
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: rgb(255,115,0);
+}
+
+.sign {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.sign:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+.divi {
+    padding: 15px;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    color: rgb(255,115,0);
+    font-size: 20px;
+}
+
+.login:hover {
+    color: white;
+    background-color: rgb(255,115,0);
+}
+
+.banner {
+    position: absolute;
+    top: 16vh;
+}
+
+.img {
+    height: 280px;
+}
+
+.imagem {
+    position: relative;
+    width: 370px;
+    left: 80px;
+    top: 10px;
+}
+
+.caixa1 {
+    background-color: #fff;
+    width: 370px;
+    height: 370px;
+    border-radius: 50px;
+    border-color: #ff7300;
+    top: 200px;
+}
+
+.pad1, .pad2 {
+    display: inline-block;
+    padding-left: 80px;
+}
+
+.padcaixa1 {
+    width: 370px;
+    padding-top: 80px;
+    position: absolute;
+    margin: auto;
+}
+
+.input {
+    border:0;
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 3px solid rgb(9, 9, 121);
+    padding: 14px 20px;
+    width: 200px;
+    outline: none;
+    color: rgb(255, 115, 0);
+    border-radius: 24px;
+    font-size: larger;
+}
+
+.enviar {
+    border: 0;
+    background: rgb(255, 115, 0);
+    display: block;
+    margin: 10px auto;
+    padding: 14px 20px;
+    width: 100px;
+    outline: none;
+    color: #fff;
+    border-radius: 24px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    background: rgba(9,9,121,1);
+}
+
+.caixa2 {
+    position: relative;
+    right: 1px;
+    background-color: #fff;
+    width: 61vw;
+    height: 650px;
+    border-radius: 50px;
+    border-color: rgb(255, 115, 0);
+    display: inline-block;
+    background-color: #fff;
+}
+
+.grid {
+    position: absolute;
+    padding-left: 20px;
+}
+
+.padgrid {
+    padding-left: 0vh;
+    padding-top: 5vh;
+}
+
+.linha div {
+    height: 65px;
+    width: 7vw;
+    background-color: #eee;
+    display: inline-block;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.linha div section {
+    position: absolute;
+    text-align: center;
+    height: 65px;
+    width: 7vw;
+}
+
+.semana {
+    color: white;
+    background-color: rgb(255, 115, 0) !important;
+    line-height: 65px;
+}
+
+.hora {
+    color: white;
+    background-color: rgb(255, 115, 0) !important;
+}
+}
+
+@media screen and (max-width:1400px) {
+    .imagem {
+        left: 200px;
+    }
+    .box1 {
+        height: 1600px;
+    }
+    .padcaixa1 {
+        min-width: 630px;
+    }
+    .caixa1 {
+        min-width: 630px;
+    }
+    .caixa2 {
+        min-width: 630px;
+    }
+    .padgrid {
+        min-width: 630px;
+    }
+    .grid {
+        min-width: 630px;
+    }
+    .linha {
+        min-width: 630px;
+    }
+    .linha div {
+        min-height: 65px;
+        min-width: 70px;
+    }
+    .linha div section {
+        min-height: 65px;
+        min-width: 70px;  
+    }
+}
+
+@media screen and (max-width:900px) {
+
+    .box1 {
+        height: 1600px;
+    }
+    .banner {
+        top: 200px;
+    }
+}
+
+@media screen and (max-width:730px) {
+    
+    .box1 {
+        height: 1700px;
+    }
+    .banner {
+        top: 300px;
+    }
+    .imagem {
+        left: 125px;
+    }
+    .pad1 {
+        padding-left: 0;
+    }
+    .pad2 {
+        padding-left: 0;
+    }
+}
+

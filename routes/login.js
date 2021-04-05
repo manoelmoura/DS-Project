@@ -8,8 +8,9 @@ const passport = require('passport')
 
 router.get('/registro', (req, res) => {
     res.render('usuarios/registro', {
-        style: 'bootstrap.css'
+        style: 'registro.css',
     })
+    req.flash('success_msg', 'Registrado com sucesso')
 })
 
 router.post('/registro', (req,res) => {
@@ -76,8 +77,9 @@ router.post('/registro', (req,res) => {
 
 router.get('/login', (req, res) => {
    res.render('usuarios/login', {
-       style: 'bootstrap.css'
-   }) 
+       style: 'login.css',
+   })
+   req.flash('success_msg', 'Logado com sucesso')
 })
 
 router.post('/login', (req, res, next) => {
@@ -90,7 +92,7 @@ router.post('/login', (req, res, next) => {
 
 router.get('/logout', (req, res) => {
     req.logout()
-    req.flash('success_msg', 'Deslogado com successo')
+    req.flash('success_msg', 'Deslogado com sucesso')
     res.redirect('/')
 })
 

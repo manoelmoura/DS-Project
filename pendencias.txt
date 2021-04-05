@@ -1,0 +1,24 @@
+1 - erros na parte de login e registro:
+    fazer caixa no front pra aparecer os erros
+    referentes a email ja registrado, senhas diferentes, etc;
+    1.1 - email só pode ser o de estudante da unb:
+        só pode permitir o cadastro de emails com o
+        @aluno.unb.br;
+
+2 - tela pra privar n usuarios de usarem o tradutor:
+    fazer uma tela em html pra indicar ao usuario que o
+    serviço de traduçao de grade so pode ser utilizado
+    se o usuario for logado;
+
+3 - fazer a parte de duvidas:
+    fazer todos os tutorias e o front das paginas de tutorial;
+    . Trancar matricula
+    . Fazer matricula nas materias
+    . Matricula extraordinaria
+    . Como mudar de curso/turno
+    . Como realizar o trancamento geral da matricula
+    .
+    .
+    .
+    . ;
+

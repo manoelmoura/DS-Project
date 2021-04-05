@@ -1,20 +1,50 @@
-{{#each erros}}
-    <div class="alert alert-danger">{{texto}}</div>
-{{else}}
-{{/each}}
-<h3>Crie sua conta hoje:</h3>
-<div class="card">
-    <div class="card-body">
-        <form action="" method="post">
-            <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" class="form-control" required>
-            <label for="email">Email: </label>
-                <input type="email" name="email" id="email" class="form-control" required>
-            <label for="senha">Senha: </label>
-                <input type="password" name="senha" id="senha" class="form-control" required>
-            <label for="senha2">Repita sua senha: </label>
-                <input type="password" name="senha2" id="senha2" class="form-control" required>
-            <button type="submit" class="btn btn-success mt-4">Criar conta</button>
-        </form>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="/" style="font-size: 35px;">Ajuda UnB</a></li>
+                <div style="display: inline-block;" class="vline"></div>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Fórum</a></li>
+                <li><a href="#">Mapa</a></li>
+                <li><a href="/tradutor">Tradutor de Grade</a></li>
+                <li><a href="/sobrenos">Sobre nós</a></li>
+            </ul>
+        </nav>
+        <a href="/usuarios/login"><div class="login">Entrar</div></a>
+    </header>
+    <form action="" method="POST">
+        <div class="container">
+            <h1>Registro</h1>
+            <p>Complete esse formulario para criar sua conta.</p>
+            <hr>
+
+            <label for="nome"><b>Nome:</b></label>
+            <br>
+            <input type="text" placeholder="Nome" name="nome" id="nome" class="form-control" required>
+            <br>
+            <label for="email"><b>Email:</b></label>
+            <br>
+            <input type="email" placeholder="Email" name="email" id="email" class="form-control" required>
+            <br>
+            <label for="psw"><b>Senha:</b></label>
+            <br>
+            <input type="password" placeholder="Digite uma senha" name="senha" id="senha" required>
+            <br>
+            <label for="psw-repeat"><b>Repita sua Senha:</b></label>
+            <br>
+            <input type="password" placeholder="Repita sua senha" name="senha2" id="senha2" class="form-control" required>
+            <hr>
+
+            <button type="submit" class="register">Registrar</button>
+        </div>
+
+        <div class="container signin">
+            <p>Ja tem uma conta? <a href="/usuarios/login">Entre aqui</a>.</p>
+        </div>
+    </form>
+
+    <div>
+        <footer>
+            <p>&copy; 2021 Ajuda UnB.</p>
+        </footer>
     </div>
-</div>

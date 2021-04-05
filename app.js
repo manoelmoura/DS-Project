@@ -10,6 +10,7 @@
     const passport = require('passport')
     const mainroute = require('./routes/mainroute')
     const usuarios = require('./routes/login')
+    const tradutor = require('./routes/tradutor')
     require('./config/auth')(passport)
 
 // Config
@@ -58,7 +59,7 @@
 // Routes
     app.use('/', mainroute)
     app.use('/usuarios', usuarios)
-
+    app.use('/tradutor', tradutor)
 
 // Outros
     const PORT = 8081
