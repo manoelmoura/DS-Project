@@ -1,6 +1,7 @@
 * {
     text-decoration: none;
     text-align: center;
+    margin: 0px;
   }
   
   body{
@@ -79,32 +80,20 @@
     background-color: rgb(255,115,0);
 }
 
-.mapa{
-    padding: 2em 0;
-}
-
-.title-map{
+.titulo-principal{
     padding: 1em 0;
 }
 
+.section-map{
+    padding: 18px;
+}
+
+.titulo-mapa{
+    padding: 0 0 18px 0;
+}
+
 .mapa-conteudo{
-    width: 100%;
     margin: 0 auto;
-}
-
-.bQmBRL {
-    overflow: scroll hidden;
-    white-space: nowrap;
-    width: auto;
-    background: rgba(230, 230, 230, 0.3);
-}
-
-.bQmBRL li {
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    border-radius: 7px;
-    cursor: pointer;
 }
 
 ul {
@@ -115,13 +104,6 @@ ul {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding-inline-start: 40px;
-}
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    outline: 0px;
 }
   
 footer{
