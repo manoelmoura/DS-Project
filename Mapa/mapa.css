@@ -19,6 +19,7 @@
       display: flex;
       justify-content: left;
       align-items: center;
+      padding: 18px;
   }
   
   .links {
@@ -98,25 +99,4 @@
 
 .mapa-conteudo{
     margin: 0 auto;
-}
-
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
-  
-footer{
-    background: rgb(2,0,36);
-    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    bottom: 0;
-    position: relative;
-    width: 100vw;   
 }
