@@ -10,13 +10,15 @@
       font-family: Arial, Helvetica, sans-serif;
       overflow-x: hidden;
   }
-  
+
+  .box1 {
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ }
   
   header {
       display: flex;
       justify-content: left;
       align-items: center;
-      background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
   }
   
   .links {
@@ -82,6 +84,7 @@
 
 .titulo-principal{
     padding: 1em 0;
+    color: white;
 }
 
 .section-map{
@@ -90,6 +93,7 @@
 
 .titulo-mapa{
     padding: 0 0 18px 0;
+    color: white;
 }
 
 .mapa-conteudo{
