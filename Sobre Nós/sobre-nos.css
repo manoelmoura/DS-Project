@@ -1,0 +1,166 @@
+*{
+  text-decoration: none;
+  border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+  }
+
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .s1 {
+    background: linear-gradient(225deg, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+
+  .s2 {
+    text-align: center;
+  }
+  
+  img{
+      border-radius: 25px;
+      width: 400px;
+      height: 400px;
+      border: 3px solid rgb(255,115,0);
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+    border-radius: 20px;
+    width: 450px;
+    padding: 1vh;
+    display: inline-block;
+  }
+
+  hr {
+    height: 5px;
+    width: 200px;
+    background-color: rgb(255,115,0);
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    margin-left: 410px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(255,115,0);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    border: solid black;
+    background: white;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: rgb(255,115,0);
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 10;
+    
+}
+
+.links {
+    list-style: none;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.links li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.vline {
+    background-color: rgb(255,115,0);
+    height: 40px;
+    width: 5px;
+    z-index: 2;
+    position: absolute;
+    padding-top: 20px;
+
+}
+
+
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: rgb(255,115,0);
+}
+
+.sign {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+    
+    
+   
+}
+
+.sign:hover {
+    background-color: rgb(255,115,0);
+}
+
+.divi {
+    padding: 15px;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    color: rgb(255,115,0);
+    font-size: 20px;
+   
+}
+
+.login:hover {
+    color: white;
+    background-color: rgb(255,115,0);
+}
