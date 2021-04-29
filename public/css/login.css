@@ -1,3 +1,9 @@
+@charset "UTF-8";
+
+* {
+    text-decoration: none;
+}
+
 body {
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -165,4 +171,17 @@ footer{
     bottom: 0;
     position: absolute;
     width: 100vw;
+}
+
+.sign {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.sign:hover {
+    background-color: rgb(255, 115, 0);
 }

@@ -12,6 +12,9 @@
     const usuarios = require('./routes/login')
     const tradutor = require('./routes/tradutor')
     require('./config/auth')(passport)
+    const sobrenos = require('./routes/sobrenos')
+    const mapa = require('./routes/mapa')
+    const forum = require('./routes/forum')
 
 // Config
     // Session
@@ -60,6 +63,9 @@
     app.use('/', mainroute)
     app.use('/usuarios', usuarios)
     app.use('/tradutor', tradutor)
+    app.use('/sobrenos', sobrenos)
+    app.use('/mapa', mapa)
+    app.use('/forum', forum)
 
 // Outros
     const PORT = 8081

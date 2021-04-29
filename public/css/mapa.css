@@ -1,0 +1,102 @@
+* {
+    text-decoration: none;
+    text-align: center;
+    margin: 0px;
+  }
+  
+  body{
+      margin: 0;
+      padding: 0%;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow-x: hidden;
+  }
+
+  .box1 {
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+ }
+  
+  header {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding: 18px;
+  }
+  
+  .links {
+      list-style: none;
+      font-size: 20px;
+  }
+  
+  .links li {
+      display: inline-block;
+      padding: 10px 40px;
+  }
+  
+  .vline {
+      background-color: rgb(255,115,0);
+      height: 40px;
+      width: 5px;
+      z-index: 2;
+      position: absolute;
+      padding-top: 20px;
+  
+  }
+  
+  .links li a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .links li a:hover {
+      color: rgb(255,115,0);
+  }
+
+  .sign {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.sign:hover {
+    color: white;
+    background-color: rgb(255,115,0);
+}
+
+.divi {
+    padding: 15px;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    color: rgb(255,115,0);
+    font-size: 20px;
+}
+
+.login:hover {
+    color: white;
+    background-color: rgb(255,115,0);
+}
+
+.titulo-principal{
+    padding: 1em 0;
+    color: white;
+}
+
+.section-map{
+    padding: 18px;
+}
+
+.titulo-mapa{
+    padding: 0 0 18px 0;
+    color: white;
+}
+
+.mapa-conteudo{
+    margin: 0 auto;
+}

@@ -124,7 +124,7 @@ input[type=text], input[type=password], input[type=email] {
     text-align: center;
     padding: 20px 0;
     bottom: 0;
-    position: relative;
+    position: absolute;
     width: 100vw;
     
 }

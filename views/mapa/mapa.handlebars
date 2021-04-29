@@ -1,0 +1,80 @@
+    <div class="box1">
+        <header>
+            <nav>
+                <ul class="links">
+                    <li><a href="/" style="font-size: 35px;">Ajuda UnB</a></li>
+                    <div style="display: inline-block;" class="vline"></div>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/forum">Fórum</a></li>
+                    <li><a href="/mapa">Mapa</a></li>
+                    <li><a href="/tradutor">Tradutor de Grade</a></li>
+                    <li><a href="/sobrenos">Sobre nós</a></li>
+                </ul>
+            </nav>
+            {{#if user}}
+                <a href="/usuarios/logout">
+                    <div class="sign">
+                        <p>Sair</p>
+                    </div>
+                </a>
+            {{else}}
+                <a href="/usuarios/registro">
+                    <div class="sign">
+                        <p>Registrar</p>
+                    </div>
+                </a>
+                <div class="divi"></div>
+                <a href="/usuarios/login">
+                    <div class="login">
+                        <p>Entrar</p>
+                    </div>
+                </a>
+            {{/if}}
+        </header>
+
+
+        <main>
+
+            <h1 class="titulo-principal">Campus UnB</h1>
+            <section class="section-map">
+                <div class="mapa-conteudo">
+                    <h2 class="titulo-mapa">Darcy Ribeiro</h2>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.7220121266864!2d-47.87436378512951!3d-15.76583842645337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bba813cf97b%3A0xed2c4932e4690218!2sCampus%20Darcy%20Ribeiro!5e0!3m2!1spt-PT!2sbr!4v1618183204701!5m2!1spt-PT!2sbr"
+                        width="80%" height="300" style="border:0; border-radius: 40px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="section-map">
+                <div class="mapa-conteudo">
+                    <h2 class="titulo-mapa">Gama</h2>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.458988240738!2d-48.04658618571816!3d-15.989604832045007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2a8c49ce3677%3A0x447f05b6f05fa281!2sUniversidade%20de%20Bras%C3%ADlia%20-%20Gama!5e0!3m2!1spt-PT!2sbr!4v1617897218206!5m2!1spt-PT!2sbr"
+                        width="80%" height="300" style="border:0; border-radius: 40px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="section-map">
+                <div class="mapa-conteudo">
+                    <h2 class="titulo-mapa">Ceilândia</h2>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3838.2377442839615!2d-48.10375528512812!3d-15.844097128400419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcd165598443b%3A0x9a9c44aadad8a063!2sFaculdade%20UnB%20Ceil%C3%A2ndia%20-%20FCE!5e0!3m2!1spt-PT!2sbr!4v1618183268113!5m2!1spt-PT!2sbr"
+                        width="80%" height="300" style="border:0; border-radius: 40px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="section-map">
+                <div class="mapa-conteudo">
+                    <h2 class="titulo-mapa">Planaltina</h2>
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.8241574140447!2d-47.66018908513217!3d-15.601041122385094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a6cc46377f649%3A0xd3be9501c1d830ad!2sUniversidade%20de%20Bras%C3%ADlia%20-%20Planaltina!5e0!3m2!1spt-PT!2sbr!4v1618183396400!5m2!1spt-PT!2sbr"
+                        width="80%" height="300" style="border:0; border-radius: 40px;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </section>
+
+        </main>
+    </div>

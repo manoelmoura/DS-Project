@@ -4,18 +4,21 @@
                 <li><a href="/" style="font-size: 35px;">Ajuda UnB</a></li>
                 <div style="display: inline-block;" class="vline"></div>
                 <li><a href="/">Home</a></li>
-                <li><a href="#">Fórum</a></li>
-                <li><a href="#">Mapa</a></li>
+                <li><a href="/forum">Fórum</a></li>
+                <li><a href="/mapa">Mapa</a></li>
                 <li><a href="/tradutor">Tradutor de Grade</a></li>
-                <li><a href="#">Sobre nós</a></li>
+                <li><a href="/sobrenos">Sobre nós</a></li>
 
             </ul>
         </nav>
-        
+        {{#if user}}
+            <a href="/usuarios/logout"><div class="sign">Sair</div></a>
+        {{else}}
+            <a href="/usuarios/registro"><div class="sign">Registrar</div></a>
+        {{/if}}
     </header>
     
     <div class="login">
-        <img src="img/avatar.svg" class="usuario" alt="" width="100" height="100">
         <h1>login</h1>
         <form action="/usuarios/login" method="POST">
             <p>Email:</p>
