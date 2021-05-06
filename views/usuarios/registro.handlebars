@@ -16,7 +16,25 @@
             <a href="/usuarios/login"><div class="login">Entrar</div></a>
         {{/if}}
     </header>
-    <form action="" method="POST">
+    {{#if erros}}
+        <script>
+            alert('As senhas são diferentes')
+        </script>
+    {{else}}
+    {{/if}}
+    {{#if email}}
+        <script>
+            alert('Esse email já foi cadastrado')
+        </script>
+    {{else}}
+    {{/if}}
+    {{#if sucesso}}
+        <script>
+            alert('Cadastrado com sucesso')
+        </script>
+    {{else}}
+    {{/if}}
+    <form action="/usuarios/registro" method="POST">
         <div class="container">
             <h1>Registro</h1>
             <p>Complete esse formulario para criar sua conta.</p>

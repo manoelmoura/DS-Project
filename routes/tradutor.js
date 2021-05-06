@@ -10,7 +10,9 @@ router.get('/', (req, res) => {
             style: 'grade.css'
         })  
     }else{
-        res.redirect('/')
+        res.render('tradutor/sem-login', {
+            style: 'sem-login.css'
+        })
     }
     
 })

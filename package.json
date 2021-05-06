@@ -1,0 +1,27 @@
+{
+  "name": "ajuda-unb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.12.1",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^10.16.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

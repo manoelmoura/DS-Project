@@ -5,9 +5,15 @@ const mongoose = require('mongoose')
 
 // Rotas
 router.get('/', (req, res) => {
-    res.render('forum/forum', {
-        style: 'forum.css'
-    })
+    if(req.isAuthenticated()){    
+        res.render('forum/forum', {
+            style: 'forum.css'
+        })
+    }else{
+        res.render('tradutor/sem-login', {
+            style: 'sem-login.css'
+        })
+    }
 })
 
 module.exports = router

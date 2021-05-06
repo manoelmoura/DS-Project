@@ -1,0 +1,55 @@
+    <div class="box1" style="height: auto;">
+        <header>
+            <nav>
+                <ul class="links">
+                    <li><a href="/" style="font-size: 35px;">Ajuda UnB</a></li>
+                    <div style="display: inline-block;" class="vline"></div>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/forum">Fórum</a></li>
+                    <li><a href="/mapa">Mapa</a></li>
+                    <li><a href="tradutor">Tradutor de Grade</a></li>
+                    <li><a href="/sobrenos">Sobre nós</a></li>
+                </ul>
+            </nav>
+            
+            {{#if user}}
+                <a href="usuarios/logout"><div class="sign"><p>Sair</p></div></a>
+                <div class="divi"></div>
+            {{else}}
+                <a href="usuarios/registro"><div class="sign"><p>Registrar</p></div></a>
+                <div class="divi"></div>
+                <a href="usuarios/login"><div class="login"><p>Entrar</p></div></a>
+            {{/if}}
+        </header>
+        <div class="caixa" style="text-align: center;">
+            Acesse sua conta do SIGAA e procure por:<br>
+            Ensino -> Matrícula On-line -> Realizar Matrícula Extraordinaria
+            <br>
+            <img src="../img/matrícula-extraordinaria-01.JPG" alt="Encontrando matrícula Extraordinaria">
+            <hr>
+            Leia o quadro amarelo e marque a caixa de "Unidade Responsável".
+            <br>
+            <img src="../img/matrícula-extraordinaria-02.JPG" alt="Buscar turmas com vagas remanescentes">
+            <hr>
+            Selecione seu curso(Ex: Ciencia da Computação) e clique em "Buscar"
+            <br>
+            <img src="../img/matrícula-extraordinaria-03.JPG" alt="Selecionar curso">
+            <hr>
+            Encontre a turma que você deseja fazer a matrícula e clique no botão verde localizado à direita.
+            <br>
+            <img src="../img/matrícula-extraordinaria-04.JPG" alt="Encontrar turma">
+            <hr>
+            insira seus dados e clique em "Confirmar matrícula"
+            <br>
+            <img src="../img/matrícula-extraordinaria-05.JPG" alt="Confirmar dados">
+        </div>
+        <div class="caixa" style="margin-top: 10px; text-align: center;">
+            Se preferir, assista o tutorial: <br>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/uUt0A0lmthw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            Tempo de vídeo: 02:25
+        </div>
+    </div>
+    </div>
+</body>
+</html>

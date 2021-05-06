@@ -1,15 +1,14 @@
-1 - erros na parte de login e registro:
-    fazer caixa no front pra aparecer os erros
-    referentes a email ja registrado, senhas diferentes, etc;
+alerts que faltam:
+    .senhas diferentes X
+    .email ja cadastrado X
+    .registrado com sucesso X
 
-3 - fazer a parte de duvidas:
-    fazer todos os tutorias e o front das paginas de tutorial;
-    . Trancar matricula
-    . Fazer matricula nas materias
-    . Matricula extraordinaria
-    . Como mudar de curso/turno
-    . Como realizar o trancamento geral da matricula
-    .
-    .
-    .
-    . ;
+    .logado com sucesso
+    .erro no login
+
+    .saiu com sucesso X
+
+    .vc precisa estar cadastrado pra usar isso
+        .forum X
+        .tradutor X
+

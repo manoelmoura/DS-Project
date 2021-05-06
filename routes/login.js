@@ -32,11 +32,17 @@ router.post('/registro', (req,res) => {
     }
 
     if(erros.length > 0){
+        res.render('usuarios/registro', {
+            style: 'registro.css',
+            erros: erros
+        })
     }else{
         Usuario.findOne({email: req.body.email}).then((usuario) => {
             if(usuario){
-                req.flash('error_msg', 'Já existe uma conta com esse email')
-                res.redirect('/usuarios/registro')
+                res.render('usuarios/registro', {
+                    style: 'registro.css',
+                    email: 'seila meu mano'
+                })
             }else{
                 const novoUsuario = new Usuario({
                     nome: req.body.nome,
@@ -54,8 +60,11 @@ router.post('/registro', (req,res) => {
                         novoUsuario.senha = hash
 
                         novoUsuario.save().then(() => {
-                            req.flash('success_msg', 'Usuario criado com sucesso')
-                            res.redirect('/')
+                            res.render('usuarios/registro', {
+                                style: 'registro.css',
+                                sucesso: 'aaaa'
+                            })
+                            console.log('cadastrado')
                         }).catch((err) => {
                             req.flash('error_msg', 'Houve um erro ao criar o usuario')
                             res.redirect('/usuarios/registro')
@@ -78,17 +87,23 @@ router.get('/login', (req, res) => {
 })
 
 router.post('/login', (req, res, next) => {
-    passport.authenticate('local', {
-        successRedirect: '/',
-        failureRedirect: '/usuarios/login',
-        failureFlash: true
+    passport.authenticate('local', (err, user, info) => {
+        if(!user){
+            return res.render('usuarios/login', {style: 'login.css', falha: 'aaaaa'})
+        }
+        req.logIn(user, (err) => {
+            return res.render('usuarios/logado', {style: 'logado.css'})
+        })
     })(req, res, next)
 })
 
 router.get('/logout', (req, res) => {
     req.logout()
-    req.flash('success_msg', 'Deslogado com sucesso')
-    res.redirect('/')
+    res.render('usuarios/login', {
+        style: 'login.css',
+        logout: 'logout',
+        user: null
+    })
 })
 
 

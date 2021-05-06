@@ -17,8 +17,14 @@
             <a href="/usuarios/registro"><div class="sign">Registrar</div></a>
         {{/if}}
     </header>
-    
+    {{#if logout}}
+        <script>
+            alert('Saiu com sucesso')
+        </script>
+    {{else}}
+    {{/if}}
     <div class="login">
+        <img src="../img/avatar.svg" class="usuario" alt="" width="100" height="100">
         <h1>login</h1>
         <form action="/usuarios/login" method="POST">
             <p>Email:</p>

@@ -15,6 +15,8 @@
     const sobrenos = require('./routes/sobrenos')
     const mapa = require('./routes/mapa')
     const forum = require('./routes/forum')
+    const tutoriais = require('./routes/tutoriais')
+    const db = require('./config/db')
 
 // Config
     // Session
@@ -45,18 +47,13 @@
         app.set('view engine', 'handlebars')
     // Mongoose
         mongoose.Promise = global.Promise;
-        mongoose.connect('mongodb://localhost/guiaunb').then(() => {
+        mongoose.connect(db.mongoURI).then(() => {
             console.log('Conectado ao mongo')
         }).catch((err) => {
             console.log('Erro ao se conectar: ' + err)
         })
     // Public
         app.use(express.static(path.join(__dirname, 'public')))
-
-        app.use((req, res, next) => {
-            console.log('MIDDLEWARE')
-            next()
-        })
 
 
 // Routes
@@ -66,9 +63,10 @@
     app.use('/sobrenos', sobrenos)
     app.use('/mapa', mapa)
     app.use('/forum', forum)
+    app.use('/tutoriais', tutoriais)
 
 // Outros
-    const PORT = 8081
+    const PORT = process.env.PORT || 8081
     app.listen(PORT, () => {
         console.log('Servidor Rodando!')
     })
