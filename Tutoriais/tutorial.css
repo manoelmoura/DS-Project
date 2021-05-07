@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+p {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media screen and (min-width:0px){
+
+.box1 {
+    background: rgb(2,0,36);
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-repeat: no-repeat;
+    z-index: 0;
+    height: 100vh;
+}
+
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    z-index: 10;
+}
+
+.links {
+    list-style: none;
+    font-size: 20px;
+    z-index: 10;
+}
+
+.links li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.vline {
+    background-color: rgb(255,115,0);
+    height: 40px;
+    width: 5px;
+    z-index: 2;
+    position: absolute;
+    padding-top: 20px;
+
+}
+
+
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: rgb(255,115,0);
+}
+
+.sign {
+    background-color: rgba(0,0,0,0);
+    color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    font-size: 20px;
+}
+
+.sign:hover {
+    background-color: rgb(255,115,0);
+}
+
+.divi {
+    padding: 15px;
+}
+
+.login {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 15px;
+    border: 2px solid white;
+    color: rgb(255,115,0);
+    font-size: 20px;
+}
+
+.login:hover {
+    color: white;
+    background-color: rgb(255,115,0);
+}
+
+.caixa {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+}
+img {
+    margin: auto;
+    position: relative;
+    border: 3px solid rgb(255,115,0);
+    border-radius: 5%;
+    text-align: center;
+    width: 62vw;
+}
+hr {
+    border: 0;
+    height: 5px;
+    width: 80vw;
+    background-color: rgb(255,115,0);
+}
+}

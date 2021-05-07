@@ -1,0 +1,130 @@
+* {
+  text-decoration: none;
+  text-align: center;
+}
+
+body{
+    margin: 0;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.links {
+    list-style: none;
+    font-size: 20px;
+}
+
+.links li {
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.vline {
+    background-color: rgb(255,115,0);
+    height: 40px;
+    width: 5px;
+    z-index: 2;
+    position: absolute;
+    padding-top: 20px;
+
+}
+
+.links li a {
+    color: white;
+    text-decoration: none;
+}
+
+.links li a:hover {
+    color: rgb(255,115,0);
+}
+
+.login {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 15px;
+  border: 2px solid white;
+  color: rgb(255,115,0);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.login:hover {
+  color: white;
+  background-color: rgb(255,115,0);
+}
+
+input[type=text], input[type=password], input[type=email] {
+    color: #ff7300;
+    width: 60%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 40px;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+
+  hr {
+    border: 1px solid #ff7300;
+    margin-bottom: 25px;
+    width: 300px;
+  }
+  
+ 
+  .register {
+    background: linear-gradient(225deg, rgba(162,79,0,1) 8%, rgba(255,115,0,1) 40%, rgba(255,196,0,1) 82%);
+    color: white;
+    font-size: larger;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    width: 60%;
+    opacity: 0.9;
+  }
+
+  .register:hover {
+    opacity:1;
+  }
+  
+
+  a {
+    color: dodgerblue;
+  }
+  
+
+  .signin {
+    background-color: #f1f1f1;
+    width: 300px;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+  }
+
+  footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(225deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+    
+}
